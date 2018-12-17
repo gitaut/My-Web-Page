@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width initial-scale=1.0">
+	<meta name="description" content="affordable and professional web design">
+	<meta name="keywords" content="web design, affordable web design, professional web design">
+	<meta name="author" content="Sergius">
+	<title>My Web Page | Welcome</title>
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="">Sergiu<span class="orange">S</span></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  <!-- about -->
+  <div class="container-fluid about" id="about">
+
+      <div class="col-sm-6 col-sm-push-6">
+        <div class="text">
+          <p>Hi, I am Sergiu Sochirca, a Software Developer from Chisinau, Moldova. I am a learner, a freecodecamper and a newbie in open source development, passionate about coding.
+          </p>
+          <p>I am currently working at Freecodecamp projects. Besides programming i like technews, geography, love to travel and watch videos about traveling and new amazing places.
+          </p>
+        </div>
+      </div>
+
+  </div>
+  <!-- portfolio -->
+  <div class="container-fluid portfolio" id="portfolio">
+    <div class="text-center">
+      <span class="title orange" style="font-size: 2em;">PORTFOLIO</span>
+    </div>
+
+      <div class="col-sm-6 col-lg-4">
+        <div class="project-item thumbnail">
+          <div>
+            <a href="https://gitaut.github.io/WeatherApp/" target="_blank">
+              <img src="img/weather-app.png" class="img img-responsive" alt="Freecodecamp Weather App Project">
+            </a>
+          </div>
+          <div class="project-item-text">
+            <h4>FCC Weather App</h4>
+            <h5>Freecodecamp's Weather App Project Using Open Weather API.</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <div class="project-item thumbnail">
+          <div>
+            <a href="https://gitaut.github.io/RandomQuoteMachine" target="_blank">
+              <img src="img/rqm.png" class="img img-responsive" alt="Freecodecamp Random Quote Machine">
+            </a>
+          </div>
+          <div class="project-item-text">
+            <h4>FCC Random Quote Machine</h4>
+            <h5>Freecodecamp's Random Quote Machine Project With Quotes API.</h5>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-sm-6 col-lg-4">
+        <div class="project-item thumbnail">
+          <div>
+            <a href="https://gitaut.github.io/WikipediaViewer/" target="_blank">
+              <img src="img/wv.png" class="img img-responsive" alt="Freecodecamp Wikipedia Viewer">
+            </a>
+          </div>
+          <div class="project-item-text">
+            <h4>FCC Wikipedia Viewer</h4>
+            <h5>Freecodecamp's Wikipedia viewer project using Wikipedia API.</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <div class="project-item thumbnail">
+          <div>
+            <a href="https://gitaut.github.io/Twitch-Streamers/" target="_blank">
+              <img src="img/ts.png" class="img img-responsive" alt="Freecodecamp Twitch-Streamers">
+            </a>
+          </div>
+          <div class="project-item-text">
+            <h4>FCC Twitch-Streamers</h4>
+            <h5>Freecodecamp's Twitch-Streamers Project Using Twitch Tv API.</h5>
+          </div>
+        </div>
+      </div>
+            
+  </div>
+  <!-- contact -->
+  <div class="container-fluid contact" id="contact">
+    <div class="text-center">
+      <span class="title orange" style="font-size: 2em;">CONTACT</span>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 col-sm-push-3 col-lg-4 col-lg-push-4">
+        <form id="contactform" method="POST">
+          <input type="text" class="form-control" name="name" placeholder="Your name">
+          <input type="email" class="form-control" name="_replyto" placeholder="Your email">
+           <!-- hidden fields -->
+          <input type="hidden" name="_next" value="https://gitaut.github.io/MyWebPage/">
+          <input type="hidden" name="_subject" value="Portfolio - New submission!">
+          <input type="text" name="_gotcha" style="display:none">
+            <!-- hidden fields ended -->
+          <textarea name="message" class="form-control" rows="5" cols="80" placeholder="Your message" style="resize: none;"></textarea>
+          <br/>
+          <div class="col-sm-12 text-center">
+            <input type="submit" class=" btn btn-lg btn-success" value="Send">
+          </div>
+        </form>
+        <script>
+          var contactform =  document.getElementById('contactform');
+          contactform.setAttribute('action', '//formspree.io/' + 'ssergiu1201' + '@' + 'gmail' + '.' + 'com');
+        </script>
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+  <div class="container-fluid footer">
+      <div class="col-sm-4 col-sm-push-4">
+        <!-- <p></p> -->
+        <div class="link text-center">
+          <h3>Around the web</h3>
+          <a href="https://github.com/gitaut" target="_blank">
+            <i class="fab fa-2x fa-github" aria-hidden="true"></i>
+          </a>
+          <a href="https://stackoverflow.com/users/9130448/sera?tab=profile" target="_blank" class="button social">
+            <i class="fab fa-2x fa-stack-overflow"></i>
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=100021830953670" target="_blank" class="button social">
+            <i class="fab fa-2x fa-facebook"></i>
+          </a>
+          <p>Copyright &copy; 2018 By <a href="#about">Sergiu<span class="orange">S</span></a></p>
+        </div>
+      </div>
+  </div>
+    <!-- footer ended -->
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
