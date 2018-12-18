@@ -2,7 +2,7 @@
 body {
   background: #eee;
   padding-top: 50px;
-  font-size: 20px;
+  font-size: 16px;
 }
 .navbar{
   opacity: .8;
@@ -10,7 +10,7 @@ body {
 a.navbar-brand{
   text-transform: none;
   color: #fff;
-  font-size: 20px;
+  font-size: 18px;
 }
 .orange{
 	color: #e85020;
@@ -20,7 +20,7 @@ nav .collapse li a:hover{
   color: #e85020 !important;
 }
 .navbar li a{
-  letter-spacing: 4px;
+  letter-spacing: 1px;
   text-transform: uppercase;
 }
 /* about */
@@ -35,8 +35,8 @@ nav .collapse li a:hover{
   color: #fff;
 }
 .about .text{
-  margin-top: 55vh;
-	font-size: 18px;
+  margin-top: 62vh;
+	font-size: 16px;
 }
 /* portfolio */
 .portfolio {
@@ -46,7 +46,7 @@ nav .collapse li a:hover{
 .portfolio .text-center{
   margin-top: 20px;
 	font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 .project-item {
   padding: 10px;
@@ -72,17 +72,17 @@ nav .collapse li a:hover{
   background-color: #ccc;
 
   padding-top: 80px;
-  padding-bottom: 60px;
+  padding-bottom: 50px;
 }
 .contact .text-center{
   font-weight: bold;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 .contact input{
   margin-bottom: 5px;
 }
 .contact .form-control{
-  font-size: 20px;
+  font-size: 16px;
 }
 /* footer */
 .footer {
@@ -98,23 +98,23 @@ nav .collapse li a:hover{
 .footer p{
   text-transform: none;
   padding-top: 10px;
-  font-size: 14px;
+  font-size: 10px;
 }
 
 @media (max-width: 768px){
   .about .text{
-   font-size: 14px;
-   margin-top: 67vh;
+   font-size: 12px;
+   margin-top: 69vh;
   }
   .contact .form-control{
-  font-size: 16px;
+  font-size: 14px;
 }
 }
 @media(min-width:1200px){
   .about .text{
-    font-size: 22px;
+    font-size: 18px;
   }
   .contact .form-control{
-  font-size: 24px;
+  font-size: 18px;
 }
 }
